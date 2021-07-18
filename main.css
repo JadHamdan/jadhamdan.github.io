@@ -1,0 +1,41 @@
+p {
+    font-family: 'Karla', sans-serif;
+    color: black;
+    text-align:justify;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.content {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 40vw;
+}
+
+h1 {
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+    
+    font-family: 'Karla', sans-serif;
+    color: black;
+    text-align:left;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.titlediv {
+    font-family: 'Karla', sans-serif;
+    color: rgb(21, 87, 41);
+    text-align:justify;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    width: 20%;
+    font-weight: 400;
+}
+
+a {
+    color: rgb(21, 87, 41);
+    text-decoration:none;
+}
+
