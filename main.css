@@ -1,5 +1,5 @@
 p {
-    font-family: 'Lora';
+    font-family: 'helvetica';
     color: black;
     text-align:justify;
     font-weight: 200;
@@ -7,12 +7,12 @@ p {
 }
 
 h2 {
-    font-family: 'Lora';
+    font-family: 'helvetica';
     color: rgb(0, 33, 71);
 }
 
 h3 {
-    font-family: 'Lora';
+    font-family: 'helvetica';
     color: rgb(0, 33, 71);
 }
 
@@ -40,7 +40,7 @@ h1 {
     padding-top: 5%;
     padding-right: 5%;
     
-    font-family: 'Lora';
+    font-family: 'helvetica';
     color: black;
     text-align:left;
     font-weight: 400;
@@ -48,7 +48,7 @@ h1 {
 }
 
 .titlediv {
-    font-family: 'Lora';
+    font-family: 'helvetica';
     color: rgb(0, 33, 71);
     text-align:justify;
     padding-left: 5%;
