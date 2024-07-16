@@ -15,6 +15,10 @@ h3 {
     font-family: 'helvetica';
     color: rgb(0, 33, 71);
 }
+h4 {
+    font-family: 'helvetica';
+    color: rgb(0, 33, 71);
+}
 
 
 .content {
@@ -43,7 +47,7 @@ h1 {
     font-family: 'helvetica';
     color: black;
     text-align:left;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 30px;
 }
 
@@ -54,7 +58,7 @@ h1 {
     padding-left: 5%;
     padding-bottom: 1%;
     width: 20%;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 a {
