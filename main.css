@@ -3,8 +3,19 @@ p {
     color: black;
     text-align:justify;
     font-weight: 200;
-    font-size: 17px;
+    font-size: 15px;
 }
+
+h2 {
+    font-family: 'Lora';
+    color: rgb(0, 33, 71);
+}
+
+h3 {
+    font-family: 'Lora';
+    color: rgb(0, 33, 71);
+}
+
 
 .content {
     padding-left: 10%;
