@@ -32,7 +32,9 @@ p {
 .row {
     display: flex;
 }
- 
+.name {
+    style="font-size:30px, font-variant: small-caps;
+}
 
 .photo {
     width: 30vw;
