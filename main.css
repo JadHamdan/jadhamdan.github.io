@@ -26,8 +26,8 @@ p {
     padding-right: 5%;
 }
 
-.column-right {
- 
+.right {
+    width: 60%; 
 }
 
 .row {
