@@ -33,7 +33,7 @@ p {
     display: flex;
 }
 .name {
-  font-size:10px;
+  font-size:25px;
   font-variant: small-caps;
 }
 
