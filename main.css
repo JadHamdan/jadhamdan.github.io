@@ -21,8 +21,8 @@ p {
 }
 
 .content {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .column-right {
@@ -33,7 +33,7 @@ p {
     display: flex;
 }
 .name {
-  font-size:30px;
+  font-size:25px;
   font-variant: small-caps;
 }
 
