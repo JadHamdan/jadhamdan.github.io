@@ -15,6 +15,13 @@ p {
     font-variant: small-caps;
 }
 
+.undergrad {
+    font-family:'times';
+    color: black;
+    font-weight:200;
+    font-size: 15px
+}
+
 .logo-div {
     padding-top: 100px;
     padding-left: 70px;
