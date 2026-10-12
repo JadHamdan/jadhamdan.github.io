@@ -1,92 +1,138 @@
+/* ---------- Base ---------- */
+
+:root {
+    --text: #000;
+    --accent: rgb(0, 33, 71);   /* Oxford blue */
+    --font-size: 20px;          /* one size for (almost) everything */
+    --name-size: 1.5em;         /* the name is the only thing bigger */
+}
+
+html {
+    font-size: var(--font-size);
+}
+
 body {
-    font-family: Times;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--text);
+    background: #fff;
 }
+
+/* The whole page occupies the middle two thirds of the screen. */
+.page {
+    width: 66.667vw;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
 p {
-    font-family: Times;
-    color: black;
-    text-align:justify;
-    font-weight: 200;
-    font-size: 30px;
-}
-
-.subdiv {
-    font-family: Times;
-    color: rgb(0, 33, 71);
-    font-weight: 200;
-    font-size:30px;
-    text-align: center;
-    font-variant: small-caps;
-}
-
-.undergrad {
-    font-family:Times;
-    color: black;
-    font-weight:200;
-    font-size: 30px
-}
-
-.logo-div {
-    padding-top: 100px;
-    padding-left: 70px;
-}
-
-.subsubdiv {
-    font-family: Times;
-    color: rgb(0, 33, 71);
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.content {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.right {
-    width: 50vw; 
-}
-
-.row {
-    display: flex;
-}
-.name {
-  font-size:35px;
-  font-variant: small-caps;
-}
-
-img {
-  width: 75px;
-}
-
-h1 {
-    padding-left: 5%;
-    padding-top: 5%;
-    padding-right: 5%;
-    
-    font-family: Times;
-    color: black;
-    text-align:left;
-    font-weight: 300;
-    font-size: 30px;
-}
-
-.titlediv {
-    font-family: Times;
-    color: rgb(0, 33, 71);
-    text-align:justify;
-    padding-left: 5%;
-    padding-bottom: 1%;
-    width: 40%;
-    font-weight: 200;
+    margin: 0 0 0.6em 0;
+    text-align: justify;
 }
 
 a {
-    text-decoration:none;
-    color: black;
-    font-size: 30px;
+    color: inherit;
+    text-decoration: none;
 }
 
 a:hover {
-  color: rgb(0, 33, 71);
+    color: var(--accent);
 }
 
+/* ---------- Header: logo + name/email/bio ---------- */
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* The logo's height is set by a small script in index.html to match the
+   height of the name/email/bio block (CSS alone can't express this, since
+   the text's height depends on how much width the logo leaves it).
+   The 8em below is only a fallback if JavaScript is off. */
+.logo {
+    flex: none;
+    align-self: flex-start;
+    height: 8em;
+    width: auto;
+}
+
+.intro {
+    flex: 1;
+    color: var(--accent);
+}
+
+.name {
+    margin: 0 0 0.2em 0;
+    font-size: var(--name-size);
+    font-weight: normal;
+    font-variant: small-caps;
+    line-height: 1.1;
+    color: var(--text);
+}
+
+.email {
+    display: block;
+    font-style: italic;
+    margin-bottom: 0.6em;
+}
+
+.intro p:last-child {
+    margin-bottom: 0;
+}
+
+/* ---------- Sections ---------- */
+
+h2 {
+    margin: 2rem 0 0.8rem 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+h3 {
+    margin: 1.5rem 0 0.8rem 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+ul {
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+li {
+    margin-bottom: 0.6em;
+}
+
+li p {
+    margin: 0;
+}
+
+.collaborators {
+    margin-top: 1.5rem;
+    font-style: italic;
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 800px) {
+    .page {
+        width: auto;
+        padding: 1.5rem 16px;
+    }
+    p {
+        text-align: left;
+    }
+    /* Too narrow to sit side by side: logo goes above the text. */
+    .header {
+        flex-direction: column;
+    }
+    .logo {
+        height: 6em !important;
+    }
+}
