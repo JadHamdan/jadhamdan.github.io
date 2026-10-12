@@ -90,13 +90,12 @@ a:hover {
 h2 {
     margin: 2rem 0 0.8rem 0;
     font-size: 1em;
-    font-weight: bold;
     color: var(--accent);
 }
 
 h3 {
     margin: 1.5rem 0 0.8rem 0;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: normal;
 }
 
