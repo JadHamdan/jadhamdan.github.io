@@ -131,7 +131,7 @@
         function fit() {
             // Only when logo and text sit side by side (not on phones).
             if (getComputedStyle(header).flexDirection === "row") {
-                logo.style.height = intro.offsetHeight + "px";
+                logo.style.height = (6/8)*intro.offsetHeight + "px";
             }
         }
         if ("ResizeObserver" in window) {
